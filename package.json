@@ -11,6 +11,13 @@
     "bootstrap": "^5.3.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "react-icons": "^5.5.0",
+>>>>>>> 0688b426662a8c1380cc607d95ac020c578b121e
+>>>>>>> 2d5aa37466f64b63b3282eb3a21aa15df08073bf
     "react-router-dom": "^7.4.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
