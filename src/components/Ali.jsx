@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
+import axios from 'axios';
+import { useLocation } from 'react-router-dom';
 
-const post = () => {
+const Ali= () => {
     
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
@@ -12,6 +14,8 @@ const post = () => {
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false); 
   const {state}=useLocation();
+
+  
 
   const addUser = (e) => {
     e.preventDefault();
@@ -110,11 +114,15 @@ const post = () => {
       <button type="submit" className="btn btn-primary" disabled={loading}>
         {loading ? 'Loading...' : 'Submit'}
       </button>
-      <button  onClick={updateUser}>Update User</button>
+      {/* <button  onClick={updateUser}>Update User</button> */}
     </form>
     {error && <p className="text-danger">There was an error, please try again!</p>}
   </div>
 );
 };
 
-export default post
+export default Ali
+
+
+
+
