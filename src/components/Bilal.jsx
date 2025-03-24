@@ -2,6 +2,7 @@ import axios, { Axios } from 'axios'
 import React, { useEffect, useState } from 'react'
 import { MdDeleteForever } from "react-icons/md";
 import { MdOutlineSystemUpdateAlt } from "react-icons/md";
+import { useNavigate } from 'react-router-dom';
 const Bilal = () => {
 
 
@@ -9,6 +10,15 @@ const Bilal = () => {
     const [error, setError] = useState(false);
     const [loading, setLoading] = useState(true);
 
+
+
+// navigation logic 
+const history=useNavigate();
+const navi=()=>{
+    return(
+        history('/hideshow')
+    )
+}
     // get data api 
     function getuserdata() {
         axios.get('https://6778c81e482f42b62e8f8e48.mockapi.io/CrudApp').then((responce) => {
@@ -49,7 +59,7 @@ const Bilal = () => {
                 </div>
 
                 <div className="home_adduser">
-                    <button type="button" className='btn btn-primary'>Hide Show Logic Page</button>
+                    <button type="button" className='btn btn-primary' onClick={navi}>Hide Show Logic Page</button>
                 </div>
             </div>
 

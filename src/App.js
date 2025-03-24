@@ -15,7 +15,7 @@ function App() {
 <BrowserRouter>
 <Routes>
   <Route path='/' element={<Bilal/>}/>
-  <Route path='./hideshow' element={<PasswordLogic/>}/>
+  <Route path='/hideshow' element={<PasswordLogic/>}/>
 </Routes>
 
 </BrowserRouter>
