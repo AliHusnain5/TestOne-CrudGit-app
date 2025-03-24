@@ -5,9 +5,10 @@ const PasswordLogic = () => {
   return (
     <div>
       <h1>Hide Show Logic Page</h1>
-      <input type="password" placeholder='password' onChange={(e)=>setShow(e.target.value)}  />
-      <button className='btn btn-primary'>{setShow? "show":"hide"}</button>
-    </div>
+      {/* <input type="password" placeholder='password' onChange={(e)=>setShow(e.target.value)}  /> */}
+      <input type={show ? "text":"password"} />
+      <button type='button' onClick={()=>setShow(!show)}>{show ? "hide":"show"}</button>
+      </div>
   )
 }
 
