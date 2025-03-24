@@ -49,7 +49,7 @@ const Bilal = () => {
                 </div>
 
                 <div className="home_adduser">
-                    <button type="button" className='btn btn-primary'>Click me to add</button>
+                    <button type="button" className='btn btn-primary'>Hide Show Logic Page</button>
                 </div>
             </div>
 

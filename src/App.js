@@ -2,11 +2,23 @@ import logo from './logo.svg';
 import './App.css';
 import Bilal from './components/Bilal';
 import "./components/Stylee.css"
+import PasswordLogic from './components/PasswordLogic';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-<Bilal/>
+
+
+
+
+<BrowserRouter>
+<Routes>
+  <Route path='/' element={<Bilal/>}/>
+  <Route path='./hideshow' element={<PasswordLogic/>}/>
+</Routes>
+
+</BrowserRouter>
     </div>
   );
 }
